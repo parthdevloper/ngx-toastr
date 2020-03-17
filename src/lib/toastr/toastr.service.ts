@@ -151,7 +151,7 @@ export class ToastrService {
   /**
    * Remove and destroy a single toast by id
    */
-  remove(toastId: number) {
+  remove(toastId?: number) {
     const found = this._findToast(toastId);
     if (!found) {
       return false;
